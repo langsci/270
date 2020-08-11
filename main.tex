@@ -1,0 +1,40 @@
+\documentclass[output=book,nobabel,
+colorlinks,citecolor=brown,
+		  ]{./langscibook}
+
+\input{localmetadata.tex}
+\input{localpackages.tex}
+\input{localhyphenation.tex}
+\bibliography{localbibliography} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                              %%%
+%%%             Frontmatter                      %%%
+%%%                                              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{document}     
+\input{localcommands.tex} 
+ 
+
+\maketitle                
+\frontmatter
+\currentpdfbookmark{Contents}{name} % adds a PDF bookmark
+\tableofcontents
+\mainmatter         
+  
+
+ 
+\include{chapters/01}
+\include{chapters/02}
+\include{chapters/03}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                              %%%
+%%%             Backmatter                       %%%
+%%%                                              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{localseealso.tex} 
+% There is normally no need to change the backmatter section
+\input{backmatter.tex} 
+\end{document}
