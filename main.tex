@@ -1,5 +1,8 @@
-\documentclass[output=book,nobabel,
+\PassOptionsToPackage{german,english}{babel}
+\documentclass[output=book,%nobabel,
 colorlinks,citecolor=brown,
+% draft,
+draftmode
 		  ]{./langscibook}
 
 \input{localmetadata.tex}
@@ -8,9 +11,7 @@ colorlinks,citecolor=brown,
 \bibliography{localbibliography} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%                                              %%%
 %%%             Frontmatter                      %%%
-%%%                                              %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{document}     
 \input{localcommands.tex} 
@@ -29,12 +30,9 @@ colorlinks,citecolor=brown,
 \include{chapters/03}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%                                              %%%
 %%%             Backmatter                       %%%
-%%%                                              %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{localseealso.tex} 
-% There is normally no need to change the backmatter section
+\input{localseealso.tex}
 \input{backmatter.tex} 
 \end{document}
