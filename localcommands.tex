@@ -1,11 +1,29 @@
-%add all your local new commands to this file
 
-\newcommand{\smiley}{:)}
-
-\renewbibmacro*{index:name}[5]{%
-  \usebibmacro{index:entry}{#1}
-    {\iffieldundef{usera}{}{\thefield{usera}\actualoperator}\mkbibindexname{#2}{#3}{#4}{#5}}}
-
-% \newcommand{\noop}[1]{}
 
 \renewcommand{\citealp}[2][]{\citealt[#1]{#2}}
+
+
+
+
+% \newcommand{\spation}[1]{\Sp{#1}}
+
+% \newcommand{\gwspation}[1]{\addfontfeature{LetterSpace=10.0}#1\addfontfeature{LetterSpace=0.0}{}}
+
+\newcommand\unifrakturspation{\addfontfeature{LetterSpace=8.0,Ligatures={NoCommon}}}
+
+\newcommand\spationcolor{\color{red}}
+\newcommand{\spation}[1]{{\spationcolor\unifrakturspation{#1}}}
+\newcommand{\orcid}[1]{}
+
+
+
+\renewcommand{\lsEditorPrefix}{}
+\renewcommand{\lsEditorSuffix}{}
+
+\newcommand{\coverextra}{
+    \node [
+            font=\fontsize{25pt}{12.5mm}\selectfont,
+            text width = 14cm,
+            below = 85mm of lspcls_covertitle.south,
+            ] {\color{white}\lsCoverAuthorFont{\nohyphens{\Large translated by}\par George Walkden\par Christina Sevdali\par Morgan Macleod}};
+}
