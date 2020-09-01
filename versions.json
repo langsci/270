@@ -1,7 +1,1 @@
-{"versions": [{"versiontype": "proofreading",
-		"title": "On a law of Indo-European word order",
-		"authors": [{"name": "Jacob Wackernagel"}],
-	"license": "CC-BY-4.0",
-	"publishedAt": "2020-04-09T09:25:13.000Z"}
-	]
-}
+{"versions": [{"authors": [{"name": "Jacob Wackernagel"}], "title": "On a law of Indo-European word order", "publishedAt": "2020-04-09T09:25:13.000Z", "license": "CC-BY-4.0", "versiontype": "proofreading"}, {"title": "On a law of Indo-European word order", "versiontype": "first_edition", "license": "CC-BY-4.0", "publishedAt": "2020-09-01T14:00:09.679679", "authors": [{"name": "Jacob Wackernagel"}]}]}
